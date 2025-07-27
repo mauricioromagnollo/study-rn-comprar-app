@@ -1,7 +1,7 @@
 import { Alert, Image, View } from 'react-native';
 
 import { styles } from './styles';
-import { Button } from '@/components/button';
+import { Button, Input } from '@/components';
 
 export function Home() {
   return (
@@ -11,6 +11,9 @@ export function Home() {
         style={styles.logo}
       />
 
+      <Input
+        placeholder="O que você deseja comprar?"
+      />
       <Button
         title="Adicionar"
         onPress={() => Alert.alert('Pituquinha Apertou')}
